@@ -5,6 +5,7 @@ import { connectors } from "./connectors";
 
 function App() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
+  console.log(active, chainId, account);
 
   return (
     <div className="App">
@@ -32,9 +33,13 @@ function App() {
         Metamask
       </button>
       <button onClick={deactivate}>Disconnect</button>
-      <div>Connection Status: ${active}</div>
-      <div>Account: ${account}</div>
-      <div>Network ID: ${chainId}</div>
+      <div>Connection Status: {active ? "connected!" : "not connected"}</div>
+      {active && (
+        <>
+          <div>Account: {account}</div>
+          <div>Network ID: {chainId}</div>
+        </>
+      )}
     </div>
   );
 }
