@@ -2,9 +2,13 @@ import "./App.css";
 import Transak from "./Transak.jsx";
 import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors";
+import meta from "./pics/mm.png";
+import coinbase from "./pics/cbw.png";
+import wallet from "./pics/wc.png";
 
 function App() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
+  const imgSize = 26;
 
   return (
     <div className="App">
@@ -15,6 +19,12 @@ function App() {
           activate(connectors.coinbaseWallet);
         }}
       >
+        <img
+          src={coinbase}
+          height={imgSize}
+          width={imgSize}
+          borderRadius="50%"
+        />
         Coinbase Wallet
       </button>
       <button
@@ -22,6 +32,7 @@ function App() {
           activate(connectors.walletConnect);
         }}
       >
+        <img src={wallet} height={imgSize} width={imgSize} />
         Wallet Connect
       </button>
       <button
@@ -29,6 +40,7 @@ function App() {
           activate(connectors.injected);
         }}
       >
+        <img src={meta} height={imgSize} width={imgSize} />
         Metamask
       </button>
       <button onClick={deactivate}>Disconnect</button>

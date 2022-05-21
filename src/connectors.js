@@ -7,7 +7,7 @@ const key = "17d97eeb779e4a09865898f0513c904c";
 const coinbaseWallet = new WalletLinkConnector({
   url: `https://mainnet.infura.io/v3/${key}`,
   appName: "Web3-react Demo",
-  supportedChainIds: [1, 3, 4, 5, 42],
+  supportedChainIds: [1, 3, 4, 5, 42, 56, 137],
 });
 
 const walletConnect = new WalletConnectConnector({
