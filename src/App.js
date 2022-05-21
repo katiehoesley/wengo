@@ -5,7 +5,6 @@ import { connectors } from "./connectors";
 
 function App() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
-  console.log(active, chainId, account);
 
   return (
     <div className="App">
