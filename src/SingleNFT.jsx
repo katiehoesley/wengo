@@ -6,29 +6,29 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './styles.css'
+import SpaIcon from '@mui/icons-material/Spa';
 
 export default function SingleNFT({ nft }) {
-  return (
-      <div className="grid-item">
+    const singleNFT = 
+    <div className="grid-item" id="nft">
         <Card sx={{ maxWidth: 345 }}>
-        <CardMedia
-            component="img"
-            height="140"
-            image={nft.img}
-        />
-        <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-            {nft.title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-            {nft.description}
-            </Typography>
-        </CardContent>
-        <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-        </CardActions>
+            <CardMedia
+                component="img"
+                height="140"
+                image={nft.img}
+            />
+            <CardActions>
+                <Button id="button" size="small" onClick={()=>alert('go to page pls')}>DETAILS</Button>
+                <Button id="button" size="small"><SpaIcon/></Button>
+            </CardActions>
         </Card>
+    </div>
+
+    
+
+  return (
+      <div>
+          {singleNFT}
       </div>
   );
 }

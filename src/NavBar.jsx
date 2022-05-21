@@ -2,48 +2,34 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import SpaIcon from '@mui/icons-material/Spa';
 
 import {
     BrowserRouter as Router,
-    Routes,
     Route,
-    Link, 
-    useNavigate
-  } from "react-router-dom";
-import NFTCollection from './NFTCollection.jsx'
+    Routes
+} from "react-router-dom";
+import UserPage from './UserPage.jsx'
+import Home from './Home.jsx'
+import About from './About.jsx'
 
 
 export default function NavBar( { NFTs }) {
-
   return (
-    <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          > 
-            <MenuIcon>
-                <Link to='/my-nft' style={{ textDecoration: 'none' }}>
-                    <MenuItem>My NFT</MenuItem>
-                </Link>
-            </MenuIcon>
-          </IconButton>
+        <Toolbar> 
+        <Router>
+          <Routes>
+            <Route path="/my-nft" component={UserPage}/>
+            <Route path="/about" component={About}/>
+            <Route path='/home'  component={Home}/>
+          </Routes>
+         </Router>
 
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} />
+        <SpaIcon/>
 
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
-    </Box>
   );
 }
 

@@ -1,3 +1,4 @@
+
 //import "./App.css";
 import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors.js";
@@ -8,11 +9,19 @@ import NavBar from "./NavBar.jsx";
 import Home from "./Home.jsx";
 import "./styles.css";
 
+import NavBar from './NavBar.jsx'
+import Home from './Home.jsx'
+import './styles.css'
+import UserPage from './UserPage.jsx'
+import About from './About.jsx'
+
+
 function App() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
   const imgSize = 26;
 
   return (
+
     <div className="App">
       <NavBar />
       <Home />
@@ -56,5 +65,15 @@ function App() {
     </div>
   );
 }
+
+    <div className="app">
+        <NavBar/>
+        <Home/>
+        <UserPage/>
+        <About />
+    </div>
+    )
+  }
+
 
 export default App;

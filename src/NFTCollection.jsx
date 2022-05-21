@@ -22,10 +22,20 @@ function NFTCollection () {
     })
 
     return(
-        <div>
-            <h1>NFT Gallery</h1>
-            <div className="grid-container">
-                {nfts}
+        <div id="home-container">
+            <div id="leaderboard">
+                <h1>Leader Board</h1>
+                <h3>Check out the community's current favorite progressive NFTs</h3>
+                <div id="board">
+                    
+                </div>
+            </div>
+            <div id="gallery">
+                <h1>NFT Gallery</h1>
+                <h3>Check out the NFTs other folx have earned & grown on APPNAME:</h3>
+                <div className="grid-container">
+                    {nfts}
+                </div>
             </div>
         </div>
     )
