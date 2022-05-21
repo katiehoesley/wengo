@@ -1,7 +1,7 @@
 import "./App.css";
 import Transak from "./Transak.jsx";
 import { useWeb3React } from "@web3-react/core";
-import { connectors } from "./connectors";
+import { connectors } from "./connectors.js";
 import meta from "./pics/mm.png";
 import coinbase from "./pics/cbw.png";
 import wallet from "./pics/wc.png";
@@ -43,7 +43,7 @@ function App() {
         <img src={meta} height={imgSize} width={imgSize} />
         Metamask
       </button>
-      <button onClick={deactivate}>Disconnect</button>
+      {active && <button onClick={deactivate}>Disconnect</button>}
       <div>Connection Status: {active ? "connected!" : "not connected"}</div>
       {active && (
         <>
