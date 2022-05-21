@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 
 import transakSDK from '@transak/transak-sdk'
 
-function BuyCrypto () {
+function Transak () {
     let settings = {
         apiKey: '62bcbb71-cd8f-434e-a003-550caae893d7',  
         environment: 'STAGING',
@@ -50,4 +50,4 @@ function BuyCrypto () {
     )
 }
 
-export default BuyCrypto;
+export default Transak;

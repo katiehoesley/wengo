@@ -1,10 +1,14 @@
 import './App.css';
-import BuyCrypto from './BuyCrypto.jsx'
+import Transak from './Transak.jsx'
+import { WalletLinkConnector } from "@web3-react/walletlink-connector";
+import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
+import { InjectedConnector } from "@web3-react/injected-connector";
 
 function App() {
   return (
     <div className="App">
-      <BuyCrypto/>
+      hi
+      <Transak/>
     </div>
   );
 }
