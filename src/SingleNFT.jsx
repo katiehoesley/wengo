@@ -5,28 +5,30 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import NFTCollection from './NFTCollection';
+import './styles.css'
 
 export default function SingleNFT({ nft }) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image={nft.img}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-         {nft.title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {nft.description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+      <div className="grid-item">
+        <Card sx={{ maxWidth: 345 }}>
+        <CardMedia
+            component="img"
+            height="140"
+            image={nft.img}
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+            {nft.title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+            {nft.description}
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Learn More</Button>
+        </CardActions>
+        </Card>
+      </div>
   );
 }
