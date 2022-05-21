@@ -1,10 +1,12 @@
-import "./App.css";
-import Transak from "./Transak.jsx";
+//import "./App.css";
 import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors.js";
 import meta from "./pics/mm.png";
 import coinbase from "./pics/cbw.png";
 import wallet from "./pics/wc.png";
+import NavBar from "./NavBar.jsx";
+import Home from "./Home.jsx";
+import "./styles.css";
 
 function App() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
@@ -12,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      hi
-      <Transak />
+      <NavBar />
+      <Home />
       <button
         onClick={() => {
           activate(connectors.coinbaseWallet);
