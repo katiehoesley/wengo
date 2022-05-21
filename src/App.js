@@ -20,7 +20,7 @@ function App() {
       <UserPage />
       <About />
 
-      <button
+      {/* <button
         onClick={() => {
           activate(connectors.coinbaseWallet);
         }}
@@ -64,7 +64,7 @@ function App() {
           <div>Account: {account}</div>
           <div>Network ID: {chainId}</div>
         </>
-      )}
+      )} */}
     </div>
   );
 }
