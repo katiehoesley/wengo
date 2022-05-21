@@ -1,37 +1,33 @@
-
 //import "./App.css";
 import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors.js";
-import meta from "./pics/mm.png";
-import coinbase from "./pics/cbw.png";
-import wallet from "./pics/wc.png";
+// import meta from "https://demo.storj-ipfs.com/ipfs/Qmboo7p1D7oWaPhtKgugiavL9JrQ7Q24c1pU4xPTdmSKgZ";
+// import coinbase from "https://demo.storj-ipfs.com/ipfs/QmaaWoX3our4L3BK7YZM4ihvP1MdKhjaLSpaHb1QkZie58";
+// import wallet from "https://demo.storj-ipfs.com/ipfs/QmWurqmXGPSoTQqwH7iDSGJuiXKoPA8n1f8kpZdX9hYoKQ";
 import NavBar from "./NavBar.jsx";
 import Home from "./Home.jsx";
 import "./styles.css";
-
-import NavBar from './NavBar.jsx'
-import Home from './Home.jsx'
-import './styles.css'
-import UserPage from './UserPage.jsx'
-import About from './About.jsx'
-
+import UserPage from "./UserPage.jsx";
+import About from "./About.jsx";
 
 function App() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
   const imgSize = 26;
 
   return (
-
-    <div className="App">
+    <div className="app">
       <NavBar />
       <Home />
+      <UserPage />
+      <About />
+
       <button
         onClick={() => {
           activate(connectors.coinbaseWallet);
         }}
       >
         <img
-          src={coinbase}
+          src="https://demo.storj-ipfs.com/ipfs/QmaaWoX3our4L3BK7YZM4ihvP1MdKhjaLSpaHb1QkZie58"
           height={imgSize}
           width={imgSize}
           borderRadius="50%"
@@ -43,7 +39,11 @@ function App() {
           activate(connectors.walletConnect);
         }}
       >
-        <img src={wallet} height={imgSize} width={imgSize} />
+        <img
+          src="https://demo.storj-ipfs.com/ipfs/QmWurqmXGPSoTQqwH7iDSGJuiXKoPA8n1f8kpZdX9hYoKQ"
+          height={imgSize}
+          width={imgSize}
+        />
         Wallet Connect
       </button>
       <button
@@ -51,7 +51,11 @@ function App() {
           activate(connectors.injected);
         }}
       >
-        <img src={meta} height={imgSize} width={imgSize} />
+        <img
+          src="https://demo.storj-ipfs.com/ipfs/Qmboo7p1D7oWaPhtKgugiavL9JrQ7Q24c1pU4xPTdmSKgZ"
+          height={imgSize}
+          width={imgSize}
+        />
         Metamask
       </button>
       {active && <button onClick={deactivate}>Disconnect</button>}
@@ -65,15 +69,5 @@ function App() {
     </div>
   );
 }
-
-    <div className="app">
-        <NavBar/>
-        <Home/>
-        <UserPage/>
-        <About />
-    </div>
-    )
-  }
-
 
 export default App;
