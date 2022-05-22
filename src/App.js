@@ -3,14 +3,14 @@ import "./styles.css";
 import UserPage from "./UserPage.jsx";
 import GetStarted from "./GetStarted.jsx";
 import NFTCollection from "./NFTCollection.jsx";
-import * as React from 'react';
+import * as React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Routes, 
-  Switch
+  Routes,
+  Switch,
 } from "react-router-dom";
-import BottomNav from './BottomNav.jsx'
+import BottomNav from "./BottomNav.jsx";
 import SignUp from "./SignUp.jsx";
 
 function App() {
@@ -18,11 +18,10 @@ function App() {
     <div className="app">
       <NavBar />
       <Routes>
-        <Route path='/home' element={<GetStarted/>} />
-        <Route path='/my-nft' element={<UserPage/>} />
-        <Route path='/community' element={<NFTCollection/>} />
-        <Route path='/signup' element={<SignUp/>} />
-
+        <Route path="/" element={<GetStarted />} />
+        <Route path="/my-nft" element={<UserPage />} />
+        <Route path="/community" element={<NFTCollection />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <br></br>
       <br></br>
@@ -31,7 +30,7 @@ function App() {
       <br></br>
       <br></br>
       <br></br>
-      <BottomNav/>
+      <BottomNav />
     </div>
   );
 }
