@@ -23,7 +23,7 @@ export default function SingleNFT({ nft }) {
       </Card>
       <span>
         <SpaIcon color="white" />
-        <div sx={{ color: "white" }}>user: {nft.owner}</div>
+        <div sx={{ color: "white" }}>details</div>
       </span>
     </div>
   );
