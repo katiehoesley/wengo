@@ -3,6 +3,7 @@ import lizards from "./images/contemplative-reptile.jpg";
 import dolphin from "./images/download-1.jpg";
 import "./styles.css";
 import Leaderboard from "./Leaderboard.jsx";
+import UpcomingEvents from "./UpcomingEvents.jsx";
 
 function NFTCollection() {
   const nft_collection = [
@@ -64,6 +65,7 @@ function NFTCollection() {
 
   return (
     <div id="home-container">
+      <UpcomingEvents/>
       <Leaderboard />
       <br />
       <br />

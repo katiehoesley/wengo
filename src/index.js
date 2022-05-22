@@ -11,7 +11,7 @@ import {
 import GetStarted from './GetStarted.jsx'
 import UserPage from './UserPage.jsx'
 import NFTCollection from "./NFTCollection";
-
+import SignUp from "./SignUp";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const getLibrary = (provider) => {
@@ -27,7 +27,8 @@ root.render(
                   <Route path="/" element={<App/>}>
                     <Route path="/home" element={<GetStarted/>} />
                     <Route path="/my-nft" element={<UserPage/>} />
-                    <Route path="/gallery" element={<NFTCollection/>} />
+                    <Route path="/community" element={<NFTCollection/>} />
+                    <Route path="/signup" element={<SignUp />} />
                   </Route>
               </Routes>
           </Router>

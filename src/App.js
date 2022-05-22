@@ -11,7 +11,7 @@ import {
   Switch
 } from "react-router-dom";
 import BottomNav from './BottomNav.jsx'
-
+import SignUp from "./SignUp.jsx";
 
 function App() {
   return (
@@ -20,7 +20,9 @@ function App() {
       <Routes>
         <Route path='/home' element={<GetStarted/>} />
         <Route path='/my-nft' element={<UserPage/>} />
-        <Route path='/gallery' element={<NFTCollection/>} />
+        <Route path='/community' element={<NFTCollection/>} />
+        <Route path='/signup' element={<SignUp/>} />
+
       </Routes>
       <br></br>
       <br></br>
