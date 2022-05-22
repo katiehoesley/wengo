@@ -20,10 +20,11 @@ export default function SingleNFT({ nft }) {
         }}
       >
         <CardMedia component="img" height="140" image={nft.img} />
-        <span>
-          details <SpaIcon />
-        </span>
       </Card>
+      <span>
+        <SpaIcon color="white" />
+        <div sx={{ color: "white" }}>user: {nft.owner}</div>
+      </span>
     </div>
   );
 
