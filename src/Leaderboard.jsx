@@ -33,11 +33,12 @@ function Leaderboard() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
-            height="140"
+            height="240"
             width="140"
             image={leader.image}
           />
         </Card>
+        <br/>
         <SpaIcon color="white" />
         <span sx={{ color: "white" }}>{leader.numOfLikes}</span>
         <div>user: {leader.owner}</div>

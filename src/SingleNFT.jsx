@@ -15,11 +15,11 @@ export default function SingleNFT({ nft }) {
           color: "black",
         }}
       >
-      <CardMedia component="img" height="140" src={nft.img} />
+      <CardMedia component="img" height="300" src={nft.img} />
       </Card>
+      <br/>
       <span>
         <SpaIcon color="white" />
-        <div sx={{ color: "white" }}>details</div>
       </span>
     </div>
   );
