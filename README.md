@@ -1,5 +1,10 @@
 # wengo
 
+[![Add to Homescreen](https://img.shields.io/badge/Skynet-Add%20To%20Homescreen-00c65e?logo=skynet&labelColor=0d0d0d)](https://homescreen.hns.siasky.net/#/skylink/AACTSSmJJ2u1NivPRkeywlKF2Alzv1Bmfw_65lT7vwp8Eg)
+
+URL: https://00096i99h4jmnd9m5f7kchtio998bm09eevl0pjv1vtecl7rns57o4g.siasky.net/
+
+
 ## About the product
 wengo provides land nfts that pay to engage in activities that promote both physical and mental health grow land for access to beneficial resources and exclusive events hold land to build community & contribute to local organizations watch wengro progress based on each holder’s growth and self care as a result of staying active irl land frens, get out.
 
