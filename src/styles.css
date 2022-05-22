@@ -67,20 +67,21 @@ h4 {
   padding: 5px
 }
 
-#nav-bar-toolbar {
-  background-color: white;
-  font-family: 'Comfortaa';font-size: 20px;
+/* 
+  #E9EFC0
+#B4E197
+#83BD75
 
+#fff3c2 */
+
+#nav-bar-toolbar {
+  background-color: #83BD75;
+  font-family: 'Comfortaa';font-size: 20px;
+  border-radius: 10px;
 }
 
 
 #grid-item {
-  /* box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.5);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3); */
   background: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -97,7 +98,7 @@ h4 {
 }
 
 html {
-  background: linear-gradient(#c8e5c1, #9b5f8f);
+  background: linear-gradient(#E9EFC0, #B4E197, #83BD75, #fff3c2);
 }
 
 .leader-grid-container {
