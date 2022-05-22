@@ -26,7 +26,7 @@ function UserPage () {
                 </div>
 
                 <div id="total_earned">
-                    <h1>available MATIC to claim:</h1> { available_matic_to_claim }
+                    <h1>MATIC to claim:</h1> { available_matic_to_claim }
                     <Button id="button" variant="contained">claim</Button>
                     <h4>average {average_matic_a_day} MATIC daily</h4>
                 </div>
@@ -37,8 +37,8 @@ function UserPage () {
                     <SingleNFT nft={NFT}/>
                 </div>
                 <div id="buttons">
-                    <Button id="stake-button" variant="contained" disabled><h4>Stake</h4></Button>
-                    <Button id="unstake-button" variant="contained"><h4>Unstake</h4></Button>
+                    <Button id="stake-button" variant="contained" disabled><h4>stake</h4></Button>
+                    <Button id="unstake-button" variant="contained"><h4>stake</h4></Button>
                     <br/><br/>
                     <ProgressBar />
                 </div>

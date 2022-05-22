@@ -3,13 +3,7 @@ import "./styles.css";
 import UserPage from "./UserPage.jsx";
 import GetStarted from "./GetStarted.jsx";
 import NFTCollection from "./NFTCollection.jsx";
-import { BottomNavigation } from '@mui/material';
 import * as React from 'react';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import RestoreIcon from '@mui/icons-material/Restore';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ArchiveIcon from '@mui/icons-material/Archive';
-import Paper from '@mui/material/Paper';
 import {
   BrowserRouter as Router,
   Route,

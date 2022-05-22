@@ -51,7 +51,7 @@ function Leaderboard() {
 
   return (
     <div id="leaderboard">
-      <h1>Leader Board</h1>
+      <h1>wengo leader board</h1>
       <h4>Check out the community's current favorite progressive NFTs</h4>
       <div id="leader-grid-container">{leaders}</div>
     </div>

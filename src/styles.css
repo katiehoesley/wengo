@@ -8,6 +8,10 @@ h1 {
   font-size: 32px;
 }
 
+#home-container {
+  text-align: center;
+}
+
 h4 {
   font-family: "Work Sans", sans-serif;
 }
@@ -180,7 +184,7 @@ html {
 
 .progress {
   background-color: #B4E197;
-  height: 100px;
+  height: 80px;
   border-radius: 1rem;
 }
 
@@ -202,3 +206,7 @@ html {
   margin-right: -33px;
 }
 
+
+#copy-icon {
+  height: 15px;
+}
