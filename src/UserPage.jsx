@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import * as React from 'react';
 import SingleNFT from './SingleNFT.jsx'
 import './styles.css'
-
+import ProgressBar from './ProgressBar.jsx'
 
 function UserPage () { 
     const NFT = {
@@ -37,11 +37,12 @@ function UserPage () {
                     <SingleNFT nft={NFT}/>
                 </div>
                 <div id="buttons">
-                    <Button id="button" variant="contained"><h1>Stake</h1></Button>
-                    <Button id="button" variant="contained"><h1>Unstake</h1></Button>
+                    <Button id="stake-button" variant="contained" disabled><h4>Stake</h4></Button>
+                    <Button id="unstake-button" variant="contained"><h4>Unstake</h4></Button>
+                    <br/><br/>
+                    <ProgressBar />
                 </div>
             </div>
-
         </div>
     )
 }

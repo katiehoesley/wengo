@@ -1,6 +1,7 @@
 import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors.js";
 import Button from '@mui/material/Button';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 function Coinbase () {
     const { activate, deactivate, active, chainId, account } = useWeb3React();
@@ -47,14 +48,19 @@ function Coinbase () {
                 width={imgSize} />
                 {/* <h2>Metamask</h2> */}
             </Button>
-        
+{/*         
+            <div id="copy-icons">
+                    <BottomNavigationAction id="copy-icon-num" label="Favorites" icon="0xf745...0c67" height={"40px"} />
+                    <BottomNavigationAction id="copy-icon-pic" label="Favorites" icon={<ContentCopyIcon/>} height={"40px"} />
+                    </div> */}
 
             {active && <Button onClick={deactivate} variant="outlined">Disconnect</Button>}
             <div><h4>Connection Status: {active ? "CONNECTION SUCCESSFUL" : "NOT CONNECTED"}</h4></div>
             {active && (
                 <>
-                    <h4>Account: {account} | Network ID: {chainId}</h4>
-                    <Button variant="contained"><h1>MINT YOUR FIRST NFT</h1></Button>
+                    <h4>Account: 0xf745...0c67 <ContentCopyIcon id="copy-icon"/> | Network ID: {chainId}</h4>
+                    {/* <Button variant="contained"><h1>MINT YOUR FIRST NFT</h1></Button> */}
+                    <h4>insert text</h4>
                 </>
             )}
 
