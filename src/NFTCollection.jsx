@@ -2,6 +2,7 @@ import SingleNFT from './SingleNFT.jsx'
 import lizards from "./images/contemplative-reptile.jpg"
 import dolphin from "./images/download-1.jpg"
 import './styles.css'
+import Leaderboard from './Leaderboard.jsx'
 
 function NFTCollection () { 
     const nft_collection = [
@@ -23,8 +24,9 @@ function NFTCollection () {
 
     return(
         <div id="home-container">
+            <Leaderboard/>
             <div id="gallery">
-                <h1>NFT Gallery</h1>
+                <h1>APPNAME COMMUNITY</h1>
                 <h4>Check out the NFTs other folx have earned & grown on APPNAME:</h4>
                 <div className="grid-container">
                     {nfts}

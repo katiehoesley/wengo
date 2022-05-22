@@ -8,8 +8,6 @@ function GetStarted() {
             <h1>Welcome to Whatever</h1>
             <h4>TO GET STARTED, CONNECT TO YOUR WALLET</h4>
             <Coinbase />
-            <Leaderboard/>
-            <NFTCollection/>
         </div>
     )
 }
