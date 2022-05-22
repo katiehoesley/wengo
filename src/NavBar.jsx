@@ -8,7 +8,7 @@ import {
     Link
 } from "react-router-dom";
 import UserPage from './UserPage.jsx'
-import Home from './GetStarted.jsx'
+import GetStarted from './GetStarted.jsx'
 import About from './About.jsx'
 
 
@@ -16,9 +16,9 @@ export default function NavBar() {
   return (
       <AppBar position="static">
         <Toolbar> 
-            <Link to="/my-nft" component={UserPage}>My NFT</Link>
-            <Link to="/about" component={About}>About APPNAME</Link>
-            <Link to='/home'  component={Home}>Home</Link>
+            <Link id="link" to="/my-nft" element={<UserPage />}>My NFT</Link>
+            {/* <Link to="/about" element={<About/>}>About APPNAME</Link> */}
+            <Link id="link" to='/home'  element={<GetStarted/>}>Home</Link>
         <SpaIcon/>
 
         </Toolbar>

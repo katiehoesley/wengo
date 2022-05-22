@@ -8,7 +8,7 @@ import {
   Route,
   Routes, 
 } from "react-router-dom";
-import Home from './GetStarted.jsx'
+import GetStarted from './GetStarted.jsx'
 import UserPage from './UserPage.jsx'
 import About from './About.jsx'
 
@@ -22,15 +22,15 @@ const getLibrary = (provider) => {
 root.render(
   <React.StrictMode>
       <Web3ReactProvider getLibrary={getLibrary}>
-    <Router>
-          <Routes>
-            <Route path="/" element={<App />}>
-              <Route path="home" element={<Home />} />
-              <Route path="my-nft" element={<UserPage />} />
-              <Route path="about" element={<About />} />
-            </Route>
-        </Routes>
-    </Router>
+          <Router>
+                <Routes>
+                  <Route path="/" element={<App/>}>
+                    <Route path="/home" element={<GetStarted/>} />
+                    <Route path="/my-nft" element={<UserPage/>} />
+                    <Route path="/about" element={<About/>} />
+                  </Route>
+              </Routes>
+          </Router>
       </Web3ReactProvider>
   </React.StrictMode>
 );
