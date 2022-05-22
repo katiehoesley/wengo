@@ -16,21 +16,19 @@ import {
   Routes, 
   Switch
 } from "react-router-dom";
-import BottomNav from './BottomNav.jsx'
 
+function BottomNav() {
+    const discord_image="https://demo.storj-ipfs.com/ipfs/QmUKwoVWEmP9bG4QREF2LssEFfU7iFqMG4Eseto9w2ovpn"
 
-function App() {
-  return (
-    <div className="app">
-      <NavBar />
-      <Routes>
-        <Route path='/home' element={<GetStarted/>} />
-        <Route path='/my-nft' element={<UserPage/>} />
-        <Route path='/gallery' element={<NFTCollection/>} />
-      </Routes>
-      <BottomNav/>
-    </div>
-  );
+    return(
+        <div id="bottomnav">
+            <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+                <BottomNavigation>
+                    <BottomNavigationAction id="bottom_nav_image" label="Favorites" icon={<img src={discord_image} height={"40px"} />}/>
+                </BottomNavigation>
+            </Paper>
+        </div>
+    )
 }
 
-export default App;
+export default BottomNav;

@@ -15,10 +15,10 @@ function Coinbase () {
         >
         <img
             alt=""
-            src="https://demo.storj-ipfs.com/ipfs/QmaaWoX3our4L3BK7YZM4ihvP1MdKhjaLSpaHb1QkZie58"
+            src="https://demo.storj-ipfs.com/ipfs/QmZDf4LrzsJfEreeFFx3dbEg4e345EqMMascmf5VvoXpJP"
             height={imgSize}
-            width={imgSize}
-            borderRadius="50%" />
+            width={imgSize} 
+            />
             {/* <h2>Coinbase Wallet</h2> */}
             </Button>
 
@@ -49,12 +49,12 @@ function Coinbase () {
             </Button>
         
 
-            {active && <button onClick={deactivate}>Disconnect</button>}
-            <div>Connection Status: {active ? "connected!" : "not connected"}</div>
+            {active && <Button onClick={deactivate} variant="outlined">Disconnect</Button>}
+            <div><h4>Connection Status: {active ? "CONNECTION SUCCESSFUL" : "NOT CONNECTED"}</h4></div>
             {active && (
                 <>
-                    <div>Account: {account}</div>
-                    <div>Network ID: {chainId}</div>
+                    <h4>Account: {account} | Network ID: {chainId}</h4>
+                    <Button variant="contained"><h1>MINT YOUR FIRST NFT</h1></Button>
                 </>
             )}
 
