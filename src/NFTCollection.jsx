@@ -25,7 +25,7 @@ function NFTCollection () {
         <div id="home-container">
             <div id="gallery">
                 <h1>NFT Gallery</h1>
-                <h3>Check out the NFTs other folx have earned & grown on APPNAME:</h3>
+                <h4>Check out the NFTs other folx have earned & grown on APPNAME:</h4>
                 <div className="grid-container">
                     {nfts}
                 </div>

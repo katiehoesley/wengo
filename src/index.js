@@ -11,6 +11,7 @@ import {
 import GetStarted from './GetStarted.jsx'
 import UserPage from './UserPage.jsx'
 import About from './About.jsx'
+import NFTCollection from "./NFTCollection";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -28,6 +29,7 @@ root.render(
                     <Route path="/home" element={<GetStarted/>} />
                     <Route path="/my-nft" element={<UserPage/>} />
                     <Route path="/about" element={<About/>} />
+                    <Route path="/gallery" element={<NFTCollection/>} />
                   </Route>
               </Routes>
           </Router>

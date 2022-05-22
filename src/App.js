@@ -19,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<GetStarted/>} />
         <Route path='/my-nft' element={<UserPage/>} />
+        <Route path='/gallery' element={<NFTCollection/>} />
       </Routes>
     </div>
   );

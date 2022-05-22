@@ -22,7 +22,7 @@ function UserPage () {
                 <div>
                     <h1>Total average of your forest</h1>
                     <h2>{average_of_your_forest}</h2>
-                    { tree_info }
+                    <h4>{ tree_info }</h4>
                 </div>
 
                 <div id="total_earned">
@@ -37,8 +37,8 @@ function UserPage () {
                     <SingleNFT nft={NFT}/>
                 </div>
                 <div id="buttons">
-                    <Button id="button" variant="contained">Stake</Button>
-                    <Button id="button" variant="contained">Unstake</Button>
+                    <Button id="button" variant="contained"><h1>Stake</h1></Button>
+                    <Button id="button" variant="contained"><h1>Unstake</h1></Button>
                 </div>
             </div>
 

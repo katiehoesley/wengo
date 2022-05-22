@@ -15,10 +15,10 @@ function Coinbase () {
         >
         <img
             alt=""
-            src="https://demo.storj-ipfs.com/ipfs/QmaaWoX3our4L3BK7YZM4ihvP1MdKhjaLSpaHb1QkZie58"
+            src="https://demo.storj-ipfs.com/ipfs/QmZDf4LrzsJfEreeFFx3dbEg4e345EqMMascmf5VvoXpJP"
             height={imgSize}
-            width={imgSize}
-            borderRadius="50%" />
+            width={imgSize} 
+            />
             {/* <h2>Coinbase Wallet</h2> */}
             </Button>
 
