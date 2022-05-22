@@ -9,6 +9,8 @@ Activity is on the decline and populations have adapted to remain inside. Isolat
 ## Solution
 We’re building a move-to-earn dapp. This incentives movement IRL, and participate in localized events - all while earning $MATIC, which they can burn to evolve their soul-based NFT.
 
+This also solves the problem of bridging people from web2 to web3 by providing a low-lift and low-barrier-to-entry application that introduces them to the world of web3 in a fun way where they benefit at the same time. We believe this type of introduction to web3 will allowless technical people to feel comfortable getting involved and understanding the major benefits and potential the web3 world has. 
+
 ## User Experience
 - User is onboarded to the dapp with a Coinbase Wallet
 - Once onboarded, they’ll get the base of their soul-bound NFT airdropped to them
