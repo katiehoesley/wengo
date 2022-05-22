@@ -80,6 +80,9 @@ h4 {
   font-size: 20px;
   border-radius: 10px;
 }
+#bottomnav {
+  background-color: #83bd75;
+}
 
 #grid-item {
   background: rgba(255, 255, 255, 0.7);
@@ -107,7 +110,7 @@ h4 {
 }
 
 html {
-  background: linear-gradient(#e9efc0, #b4e197, #83bd75, #fff3c2);
+  background: linear-gradient(90deg, #e9efc0 6%, #b4e197 25%, #83bd75 55%);
 }
 
 .leader-grid-container {

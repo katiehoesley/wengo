@@ -9,12 +9,12 @@ function BottomNav() {
     "https://demo.storj-ipfs.com/ipfs/QmUKwoVWEmP9bG4QREF2LssEFfU7iFqMG4Eseto9w2ovpn";
 
   return (
-    <div id="bottomnav">
+    <div>
       <Paper
         sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
         elevation={3}
       >
-        <BottomNavigation>
+        <BottomNavigation id="bottomnav">
           <BottomNavigationAction
             id="bottom_nav_image"
             label="Favorites"
