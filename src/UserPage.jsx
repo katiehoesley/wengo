@@ -13,7 +13,7 @@ function UserPage () {
     const tree_info = "amazing!"
     const available_matic_to_claim = "15.67"
     const average_matic_a_day = "1"
-    const average_of_your_forest = 5
+    const average_of_your_forest = 4
     return(
         <div className="user_page" id="grid-container">
             
@@ -34,7 +34,7 @@ function UserPage () {
 
             <div id="staked_nft">
                 <div id="nft_image">
-                    <SingleNFT nft={NFT}/>
+                    <img id="my-nft" src="https://demo.storj-ipfs.com/ipfs/Qmf3ATr4r4SfPUfHMtpcCiccGLJhQ5fYBi6x3iHsjFzcoV"/>
                 </div>
                 <div id="buttons">
                     <Button id="stake-button" variant="contained" disabled><h4>stake</h4></Button>

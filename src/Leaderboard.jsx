@@ -12,17 +12,17 @@ function Leaderboard() {
   const nft_data = [
     {
       numOfLikes: 127,
-      image: lizards,
+      image: "https://demo.storj-ipfs.com/ipfs/QmTKERiXzz3iF6gsa278GcFXbrfZ3iCyZkZtWPALM8H3Fg",
       owner: "goodbyeKYLE",
     },
     {
       numOfLikes: 83,
-      image: dolphin,
+      image: "https://demo.storj-ipfs.com/ipfs/QmeeDrJHhGV3eFhKbQe97eSgCfzenM1TNjWtBkvd9P2hAG",
       owner: "erikaJayne666",
     },
     {
       numOfLikes: 57,
-      image: lizards,
+      image: "https://demo.storj-ipfs.com/ipfs/QmRsSs1o2U7tEpUhsDoQaVMKxMVv3ED5k31RMhWyue1tcj",
       owner: "lisaVanDerPumpRules",
     },
   ];
