@@ -77,7 +77,7 @@ function Coinbase() {
             Account: {account}<ContentCopyIcon id="copy-icon"/> | Network ID: {chainId}
           </h4>
           <Button variant="contained" id="view-nft-button">
-            <Link id="link-title" to='/my-nft'  element={<UserPage/>}>
+            <Link id="link-title-view" to='/my-nft'  element={<UserPage/>}>
                 <h4>VIEW YOUR NFT</h4>
             </Link>
           </Button>

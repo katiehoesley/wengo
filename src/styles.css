@@ -138,6 +138,15 @@ h4 {
   font-size: 30px;
 }
 
+#link-title-view {
+  color: darkseagreen;
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+  margin-right: 20px;
+  /* font-size: 30px; */
+}
+
 #spa-icon {
   color: white;
   padding: 5px;
