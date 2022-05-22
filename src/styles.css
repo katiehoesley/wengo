@@ -9,6 +9,7 @@ h1 {
 }
 
 #home-container {
+  color: white; 
   text-align: center;
 }
 
@@ -25,6 +26,7 @@ h4 {
 }
 
 #total_earned {
+  color: white;
   margin: 10px;
   backdrop-filter: blur(16px) saturate(80%);
   border-radius: 12px;
@@ -32,7 +34,17 @@ h4 {
   padding: 40px;
 }
 
+#acreage{
+  color: #83BD75;
+  margin: 10px;
+  backdrop-filter: blur(16px) saturate(280%);
+  border-radius: 12px;
+  border: 1px solid /rgba(209, 213, 219, 0.3);
+  padding: 40px;
+}
+
 #staked_nft {
+
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
@@ -58,6 +70,8 @@ h4 {
   font-size: 30px;
   text-align: center;
 }
+
+
 
 #average_of_forest {
   display: grid;
@@ -157,6 +171,7 @@ html {
 }
 
 #leaderboard {
+  color: white; 
   text-align: center;
   justify-content: center;
   padding: 10px;
@@ -173,7 +188,12 @@ html {
 }
 
 #get-started {
+  color: white; 
   text-align: center;
+}
+
+#view-nft-button{
+  background-color: white;
 }
 
 .grid-item {
@@ -192,19 +212,29 @@ html {
   background-color: rgb(233, 233, 233);
   border-radius: 0.5rem;
 }
+/* 
+  #E9EFC0
+#B4E197
+#83BD75
+
+#fff3c2 */
 
 .progress {
-  background-color: darkgreen;
+  background-color: #83BD75;
   height: 80px;
   border-radius: 1rem;
 }
 
 #stake-button {
-  background-color: white; 
-  color: black; 
+  background-color: lightgrey;
+  color: lightslategray; 
   height: 80px;
   width: 350px;
   margin-right: 2%;
+}
+
+#time-staked-text {
+  color: white
 }
 
 #claim-button{
@@ -217,7 +247,8 @@ html {
 }
 
 #unstake-button {
-  background-color: lightgrey;
+  background-color: white;
+  color: #83BD75;
   height: 80px;
   width: 350px;
 }
@@ -228,4 +259,24 @@ html {
 
 #copy-icon {
   height: 15px;
+}
+
+#homepage-text {
+  text-align: center;
+  padding: 10px;
+  text-align: center;
+  padding: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  margin: 5px;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+}
+
+#title {
+  font-size: 80px;
 }

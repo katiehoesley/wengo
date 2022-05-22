@@ -2,7 +2,11 @@ import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors.js";
 import Button from '@mui/material/Button';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
-
+import {
+    BrowserRouter as Router,
+    Link
+} from "react-router-dom";
+import UserPage from './UserPage.jsx'
 
 function Coinbase() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
@@ -72,6 +76,11 @@ function Coinbase() {
           <h4>
             Account: 0xf745...0c67<ContentCopyIcon id="copy-icon"/> | Network ID: {chainId}
           </h4>
+          <Button variant="contained" id="view-nft-button">
+            <Link id="link-title" to='/my-nft'  element={<UserPage/>}>
+                <h4>VIEW YOUR NFT</h4>
+            </Link>
+          </Button>
         </>
       )}
     </div>

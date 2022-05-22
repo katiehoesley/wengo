@@ -17,7 +17,7 @@ function ProgressBar({width, percent}) {
 
     return (
       <div>
-      <h4>time staked: 10:24:{seconds}</h4>
+      <h4 id="time-staked-text">time staked: 10:24:{seconds}</h4>
       <div className="progress-div" style={{width: width}} onload="myFunction();">
            <div style={{width: `${progress}px`}}className="progress"/>
       </div>

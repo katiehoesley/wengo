@@ -19,7 +19,7 @@ function UserPage () {
             
 
             <div id="average_of_forest">
-                <div>
+                <div id="acreage">
                     <h1>total acreage:</h1>
                     <h1>{average_of_your_forest}</h1>
                     <h4>{ tree_info }</h4>
