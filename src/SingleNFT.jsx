@@ -15,7 +15,7 @@ export default function SingleNFT({ nft }) {
           color: "black",
         }}
       >
-        <CardMedia component="img" height="140" image={nft.img} />
+      <CardMedia component="img" height="140" src={nft.img} />
       </Card>
       <span>
         <SpaIcon color="white" />

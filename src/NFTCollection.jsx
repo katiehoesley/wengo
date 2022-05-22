@@ -6,15 +6,23 @@ import Leaderboard from "./Leaderboard.jsx";
 
 function NFTCollection() {
   const nft_collection = [
-    { id: 1, title: "one", decription: "lizards rock!", id: 1, img: lizards },
+    { id: 1, 
+      title: "one", 
+      decription: "lizards rock!", 
+      img: lizards 
+    },
     {
       id: 2,
       title: "two",
       decription: "what a cute dolphin",
-      id: 1,
-      img: dolphin,
+      img: "https://demo.storj-ipfs.com/ipfs/QmZDf4LrzsJfEreeFFx3dbEg4e345EqMMascmf5VvoXpJP",
     },
-    { id: 3, title: "three", decription: "lizards rock!", id: 1, img: lizards },
+    { 
+      id: 3,
+       title: "three", 
+       decription: "lizards rock!", 
+       img: lizards 
+      },
     {
       id: 4,
       title: "four",
@@ -29,7 +37,12 @@ function NFTCollection() {
       id: 1,
       img: dolphin,
     },
-    { id: 6, title: "six", decription: "lizards rock!", id: 1, img: lizards },
+    { 
+      id: 6, 
+      title: "six", 
+      decription: "lizards rock!", 
+      img: lizards 
+    },
     {
       id: 7,
       title: "seven",
@@ -37,7 +50,12 @@ function NFTCollection() {
       id: 1,
       img: dolphin,
     },
-    { id: 8, title: "eight", decription: "lizards rock!", id: 1, img: lizards },
+    { 
+      id: 8, 
+      title: "eight", 
+      decription: "lizards rock!", 
+      img: lizards 
+    },
   ];
 
   const nfts = nft_collection.map((nft) => {
