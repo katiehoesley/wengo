@@ -1,7 +1,6 @@
-name: wengo
+name: Deploy to Skynet
 on:
-  pull_request: 
-    branches: [main]
+  pull_request:
 jobs:
   build:
   runs-on: ubuntu-latest
@@ -17,9 +16,8 @@ steps:
     run: npm test
   - name: Build
     run: npm run build
-
-  name: Deploy to Skynet
+name: Deploy to Skynet
   uses: kwypchlo/deploy-to-skynet-action@main
   with:
     upload-dir: build
-    github-token: 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
+    github-token: ${{ secrets.GITHUB_TOKEN }}
