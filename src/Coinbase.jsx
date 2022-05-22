@@ -50,7 +50,7 @@ function Coinbase () {
         
 
             {active && <button onClick={deactivate}>Disconnect</button>}
-            <div>Connection Status: {active ? "connected!" : "not connected"}</div>
+            <div><h4>CONNECTION STATUS: {active ? "CONNECTION SUCCESSFUL" : "NOT CONNECTED"}</h4></div>
             {active && (
                 <>
                     <div>Account: {account}</div>
