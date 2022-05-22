@@ -1,31 +1,24 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import SpaIcon from '@mui/icons-material/Spa';
 
 import {
     BrowserRouter as Router,
-    Route,
-    Routes
+    Link
 } from "react-router-dom";
 import UserPage from './UserPage.jsx'
-import Home from './Home.jsx'
+import Home from './GetStarted.jsx'
 import About from './About.jsx'
 
 
-export default function NavBar( { NFTs }) {
+export default function NavBar() {
   return (
       <AppBar position="static">
         <Toolbar> 
-        <Router>
-          <Routes>
-            <Route path="/my-nft" component={UserPage}/>
-            <Route path="/about" component={About}/>
-            <Route path='/home'  component={Home}/>
-          </Routes>
-         </Router>
-
+            <Link to="/my-nft" component={UserPage}>My NFT</Link>
+            <Link to="/about" component={About}>About APPNAME</Link>
+            <Link to='/home'  component={Home}>Home</Link>
         <SpaIcon/>
 
         </Toolbar>

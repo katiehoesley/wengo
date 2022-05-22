@@ -8,7 +8,7 @@ function Coinbase () {
     
     return(
     <div>
-        <Button
+        <Button variant="outlined" id="connect-button"
             onClick={() => {
                 activate(connectors.coinbaseWallet);
             } }
@@ -19,8 +19,10 @@ function Coinbase () {
             height={imgSize}
             width={imgSize}
             borderRadius="50%" />
-            Coinbase Wallet
-            </Button><Button
+            {/* <h2>Coinbase Wallet</h2> */}
+            </Button>
+
+            <Button variant="outlined" id="connect-button"
                 onClick={() => {
                     activate(connectors.walletConnect);
                 } }
@@ -30,10 +32,10 @@ function Coinbase () {
                 src="https://demo.storj-ipfs.com/ipfs/QmWurqmXGPSoTQqwH7iDSGJuiXKoPA8n1f8kpZdX9hYoKQ"
                 height={imgSize}
                 width={imgSize} />
-                Wallet Connect
+                {/* <h2>Wallet Connect</h2> */}
             </Button>
             
-            <Button
+            <Button variant="outlined" id="connect-button"
                 onClick={() => {
                     activate(connectors.injected);
                 } }
@@ -43,7 +45,7 @@ function Coinbase () {
                 src="https://demo.storj-ipfs.com/ipfs/Qmboo7p1D7oWaPhtKgugiavL9JrQ7Q24c1pU4xPTdmSKgZ"
                 height={imgSize}
                 width={imgSize} />
-                Metamask
+                {/* <h2>Metamask</h2> */}
             </Button>
         
 

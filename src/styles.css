@@ -1,17 +1,4 @@
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 10px;
-  }
-
-.grid-item {    
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-
 .app{
   font-family: sans-serif;
 }
@@ -20,10 +7,6 @@ h1 {
   justify-content: center;
 }
 
-#leaderboard{
-  justify-content: center;
-  background-color: pink;
-}
 
 #grid-container { 
   /* color: blue */
@@ -77,4 +60,56 @@ h1 {
 #grid-item {
     box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
 
+}
+
+#connect-button {
+  margin: 10px;
+}
+
+
+html {
+  background: linear-gradient(#c8e5c1, #9b5f8f);
+  background-repeat: inherit;
+}
+
+
+.leader-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+.leader-grid-item {    
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px
+}
+
+
+#leaderboard{
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border: 10px;
+}
+
+.grid-container {
+  margin-top: 25px; 
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+
+#get-started {
+text-align: center;
+}
+
+.grid-item {    
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 }

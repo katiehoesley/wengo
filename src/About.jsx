@@ -1,7 +1,7 @@
 function About() {
     return(
         <div>
-            dont worry bout it
+            About us! 
         </div>
     )
 }
