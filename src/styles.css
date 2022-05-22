@@ -61,15 +61,15 @@ h4 {
 }
 
 #link-title {
-  color: white; 
+  color: #83bd75;
   font-weight: bold;
   padding: 5px;
   text-decoration: none;
 }
 
 #spa-icon {
-  color: white; 
-  padding: 5px
+  color: white;
+  padding: 5px;
 }
 
 /* 
@@ -80,8 +80,7 @@ h4 {
 #fff3c2 */
 
 #nav-bar-toolbar {
-  background-color: #E9EFC0;
-  font-family: 'Comfortaa';font-size: 20px;
+  background-color: #e9efc0;
   font-family: "Comfortaa";
   font-size: 20px;
   border-radius: 10px;
@@ -176,36 +175,34 @@ html {
   margin: 5px;
 }
 
-
 .progress-div {
   background-color: rgb(233, 233, 233);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .progress {
-  background-color: #B4E197;
+  background-color: #b4e197;
   height: 80px;
   border-radius: 1rem;
 }
 
 #stake-button {
-  background-color: #B4E197; 
-  color: white; 
+  background-color: #b4e197;
+  color: white;
   height: 80px;
-  width: 350px; 
+  width: 350px;
   margin-right: 2%;
 }
 
 #unstake-button {
-  background-color: lightgrey; 
+  background-color: lightgrey;
   height: 80px;
-  width: 350px; 
+  width: 350px;
 }
 
 #copy-icon-num {
   margin-right: -33px;
 }
-
 
 #copy-icon {
   height: 15px;
