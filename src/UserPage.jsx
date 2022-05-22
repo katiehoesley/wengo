@@ -35,6 +35,7 @@ function UserPage () {
             <div id="staked_nft">
                 <div id="nft_image">
                     <img id="my-nft" src="https://demo.storj-ipfs.com/ipfs/Qmf3ATr4r4SfPUfHMtpcCiccGLJhQ5fYBi6x3iHsjFzcoV"/>
+                    <h4 id="description">your soul-bound wengo nft.<br/>it's is upgradable & produces $matic!</h4>
                 </div>
                 <div id="buttons">
                     <Button id="stake-button" variant="contained" disabled><h4>stake</h4></Button>
@@ -42,10 +43,6 @@ function UserPage () {
                     <br/><br/>
                     <ProgressBar />
                 </div>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
 
             </div>
         </div>

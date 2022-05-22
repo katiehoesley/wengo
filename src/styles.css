@@ -17,6 +17,17 @@ h4 {
   font-family: "Work Sans", sans-serif;
 }
 
+#description {
+  font-size: 18px; 
+  color: #83BD75;
+}
+
+#sub-description {
+  font-size: 14px;
+  color:  #253322;
+  font-family: "Comfortaa";
+}
+
 #my-nft {
   height: 300px;
 }

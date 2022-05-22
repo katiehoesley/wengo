@@ -9,6 +9,7 @@ function GetStarted() {
             <h1 id="title">welcome to wengo!</h1>
                 <div id="homepage-text">
                     <h1>not just an nft that pays you $matic</h1>
+                    
                     <h4>{text}</h4>
                 </div>
             <h4>TO GET STARTED, CONNECT TO YOUR WALLET</h4>
