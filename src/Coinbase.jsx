@@ -1,6 +1,8 @@
 import { useWeb3React } from "@web3-react/core";
 import { connectors } from "./connectors.js";
-import Button from "@mui/material/Button";
+import Button from '@mui/material/Button';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+
 
 function Coinbase() {
   const { activate, deactivate, active, chainId, account } = useWeb3React();
@@ -22,6 +24,7 @@ function Coinbase() {
           width={imgSize}
         />
       </Button>
+
 
       <Button
         variant="outlined"

@@ -9,7 +9,6 @@ import {
 } from "react-router-dom";
 import UserPage from './UserPage.jsx'
 import GetStarted from './GetStarted.jsx'
-import About from './About.jsx'
 import NFTCollection from './NFTCollection';
 
 export default function NavBar() {
