@@ -4,11 +4,12 @@
 
 h1 {
   justify-content: center;
-  font-family: 'Comfortaa';font-size: 32px;
+  font-family: "Comfortaa";
+  font-size: 32px;
 }
 
 h4 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 #grid-container {
@@ -49,22 +50,21 @@ h4 {
   padding: 10px;
 }
 
-#botal_earned {
+#total_earned {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   font-size: 30px;
 }
 
-
 #link-title {
-  color: darkseagreen; 
+  color: darkseagreen;
   font-weight: bold;
-  padding: 5px; 
+  padding: 5px;
 }
 
 #spa-icon {
-  color: darkseagreen; 
-  padding: 5px
+  color: darkseagreen;
+  padding: 5px;
 }
 
 /* 
@@ -75,11 +75,11 @@ h4 {
 #fff3c2 */
 
 #nav-bar-toolbar {
-  background-color: #83BD75;
-  font-family: 'Comfortaa';font-size: 20px;
+  background-color: #83bd75;
+  font-family: "Comfortaa";
+  font-size: 20px;
   border-radius: 10px;
 }
-
 
 #grid-item {
   background: rgba(255, 255, 255, 0.7);
@@ -94,11 +94,20 @@ h4 {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-  padding: 40px; 
+  padding: 40px;
+}
+#disconnect-button {
+  margin: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  padding: 10px;
 }
 
 html {
-  background: linear-gradient(#E9EFC0, #B4E197, #83BD75, #fff3c2);
+  background: linear-gradient(#e9efc0, #b4e197, #83bd75, #fff3c2);
 }
 
 .leader-grid-container {
