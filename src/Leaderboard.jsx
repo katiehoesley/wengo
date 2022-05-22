@@ -40,6 +40,7 @@ function Leaderboard() {
         </Card>
         <SpaIcon color="white" />
         <span sx={{ color: "white" }}>{leader.numOfLikes}</span>
+        <div>user: {leader.owner}</div>
       </div>
     );
   }
@@ -48,17 +49,12 @@ function Leaderboard() {
     return leaderFormatter(leader);
   });
 
-
-    return (
-        <div id="leaderboard">
-          <h1>wengo leader board</h1>
-          <h4>Check out the community's current favorite progressive NFTs</h4>
-        
-            <div id="leader-grid-container">
-                { leaders }
-            </div>
-            <div id="leader-grid-container">{leaders}</div>
-       </div>
+  return (
+    <div id="leaderboard">
+      <h1>wengo leader board</h1>
+      <h4>Check out the community's current favorite progressive NFTs</h4>
+      <div id="leader-grid-container">{leaders}</div>
+    </div>
   );
 }
 
