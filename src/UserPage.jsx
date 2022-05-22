@@ -10,9 +10,9 @@ function UserPage () {
         img: dolphin, 
     }
 
-    const tree_info = "Here is some information about this tree. It's cool, eh?"
+    const tree_info = "amazing!"
     const available_matic_to_claim = "15.67"
-    const average_matic_a_day = "3.67395"
+    const average_matic_a_day = "1"
     const average_of_your_forest = 5
     return(
         <div className="user_page" id="grid-container">
@@ -20,8 +20,8 @@ function UserPage () {
 
             <div id="average_of_forest">
                 <div>
-                    <h1>Total average of your forest</h1>
-                    <h2>{average_of_your_forest}</h2>
+                    <h1>total acreage:</h1>
+                    <h1>{average_of_your_forest}</h1>
                     <h4>{ tree_info }</h4>
                 </div>
 
