@@ -194,6 +194,7 @@ html {
 
 #view-nft-button{
   background-color: white;
+  width: 250px; 
 }
 
 .grid-item {

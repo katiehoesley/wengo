@@ -74,7 +74,7 @@ function Coinbase() {
       {active && (
         <>
           <h4>
-            Account: 0xf745...0c67<ContentCopyIcon id="copy-icon"/> | Network ID: {chainId}
+            Account: {account}<ContentCopyIcon id="copy-icon"/> | Network ID: {chainId}
           </h4>
           <Button variant="contained" id="view-nft-button">
             <Link id="link-title" to='/my-nft'  element={<UserPage/>}>

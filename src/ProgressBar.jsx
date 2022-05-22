@@ -7,7 +7,7 @@ function ProgressBar({width, percent}) {
   
     let progress = 20 * 20;
 
-    var seconds = 0;
+    var seconds = 17;
     var el = document.getElementById('seconds-counter');
     
     function incrementSeconds() {
