@@ -25,9 +25,10 @@ function NFTCollection () {
     return(
         <div id="home-container">
             <Leaderboard/>
+            <br/><br/>
             <div id="gallery">
-                <h1>APPNAME COMMUNITY</h1>
-                <h4>Check out the NFTs other folx have earned & grown on APPNAME:</h4>
+                <h1>wengo community</h1>
+                <h4>Check out the NFTs other folx have earned & grown on wengo!</h4>
                 <div className="grid-container">
                     {nfts}
                 </div>

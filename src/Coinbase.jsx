@@ -70,11 +70,8 @@ function Coinbase() {
       {active && (
         <>
           <h4>
-            Account: {account} | Network ID: {chainId}
+            Account: 0xf745...0c67<ContentCopyIcon id="copy-icon"/> | Network ID: {chainId}
           </h4>
-          <Button variant="contained">
-            <h1>MINT YOUR FIRST NFT</h1>
-          </Button>
         </>
       )}
     </div>
