@@ -21,7 +21,6 @@ function Coinbase() {
           height={imgSize}
           width={imgSize}
         />
-        {/* <h2>Coinbase Wallet</h2> */}
       </Button>
 
       <Button
@@ -37,7 +36,6 @@ function Coinbase() {
           height={imgSize}
           width={imgSize}
         />
-        {/* <h2>Wallet Connect</h2> */}
       </Button>
 
       <Button
@@ -53,7 +51,6 @@ function Coinbase() {
           height={imgSize}
           width={imgSize}
         />
-        {/* <h2>Metamask</h2> */}
       </Button>
 
       {active && (
