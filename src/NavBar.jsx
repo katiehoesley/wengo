@@ -17,8 +17,8 @@ export default function NavBar() {
   return (
       <AppBar position="static">
         <Toolbar id="nav-bar-toolbar" > 
-            <Link id="link-title" to="/my-nft" element={<UserPage />}>MY NFT</Link>
             <Link id="link-title" to='/home'  element={<GetStarted/>}>HOME</Link>
+            <Link id="link-title" to="/my-nft" element={<UserPage />}>MY NFT</Link>
             <Link id="link-title" to='/gallery'  element={<NFTCollection/>}>GALLERY</Link>
         <SpaIcon id="spa-icon"/>
 

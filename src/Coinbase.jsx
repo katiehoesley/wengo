@@ -49,12 +49,11 @@ function Coinbase () {
             </Button>
         
 
-            {active && <button onClick={deactivate}>Disconnect</button>}
-            <div><h4>CONNECTION STATUS: {active ? "CONNECTION SUCCESSFUL" : "NOT CONNECTED"}</h4></div>
+            {active && <Button onClick={deactivate} variant="outlined">Disconnect</Button>}
+            <div><h4>Connection Status: {active ? "CONNECTION SUCCESSFUL" : "NOT CONNECTED"}</h4></div>
             {active && (
                 <>
-                    <div>Account: {account}</div>
-                    <div>Network ID: {chainId}</div>
+                    <h4>Account: {account} | Network ID: {chainId}</h4>
                 </>
             )}
 
